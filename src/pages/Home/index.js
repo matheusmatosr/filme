@@ -35,10 +35,10 @@ function Home(){
 
     return(
         <div className='container'>
-            <div className='lista-filmes'>
+            <div className='lista-filmes' gap={3} row={3}>
                 {filmes.map((filme) => {
                     return(
-                        <article key={filme.id}>
+                        <article key={filme.id} >
                             <strong>{filme.title}</strong>
                             <img src={`https://image.tmdb.org/t/p/original/${filme.poster_path}`} alt={filme.title}/>
                             <Link to={`/filme/${filme.id}`}>Acessar</Link>

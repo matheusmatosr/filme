@@ -68,9 +68,9 @@
 
 @media screen and (max-width: 600px) {
     .lista-filmes img {
-        margin-left: 60px;
+        margin-left: 20px;
     }
     .lista-filmes a{
-        margin-left: 60px;
+        margin-left: 20px;
     }
 }

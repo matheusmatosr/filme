@@ -38,7 +38,6 @@
 }
 
 .lista-filmes img{
-    display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -49,7 +48,7 @@
     display: block;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
-    margin-left: 180px;
+    margin-left: 230px;
 }
 
 .lista-filmes a{
@@ -64,5 +63,14 @@
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
     width: 300px;
-    margin-left: 180px;
+    margin-left: 230px;
+}
+
+@media screen and (max-width: 600px) {
+    .lista-filmes img {
+        margin-left: 80px;
+    }
+    .lista-filmes a{
+        margin-left: 80px;
+    }
 }

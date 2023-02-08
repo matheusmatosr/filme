@@ -79,6 +79,9 @@ function Filme(){
                     </a>
                 </button>
             </div>
+            <div className="detalheFinal">
+                <p>@ 2023 by <a href="https://www.linkedin.com/in/matheus-matos-1a523221b/">Matheus Matos</a></p>
+            </div>
         </div>
     )
 }

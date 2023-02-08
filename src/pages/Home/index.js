@@ -35,7 +35,7 @@ function Home(){
 
     return(
         <div className='container'>
-            <div className='lista-filmes' gap={3} row={3}>
+            <div className='lista-filmes'>
                 {filmes.map((filme) => {
                     return(
                         <article key={filme.id} >

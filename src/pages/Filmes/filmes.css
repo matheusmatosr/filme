@@ -1,0 +1,60 @@
+.filme-detalhes{
+    margin: 0 auto;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    padding: 0 8px;
+}
+
+.filme-detalhes h1{
+    margin: 20px 0;
+}
+
+.filme-detalhes img{
+    border-radius: 8px;
+    width: 800px;
+    max-width: 100%;
+    max-height: 340px;
+    object-fit: corver;
+}
+
+.filme-detalhes h3{
+    margin-top: 25px;
+}
+
+.filme-detalhes span{
+    margin: 8px 0;
+}
+
+.filme-detalhes strong{
+    margin-top: 25px
+}
+
+.area-buttons button{
+    margin-right: 12px;
+    margin-left: 0;
+    margin-top: 25px;
+    font-size: 20px;
+    border: 0;
+    outline: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.area-buttons button:hover{
+    background-color: brown;
+    color: aliceblue;
+}
+
+.area-buttons a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s;
+}
+
+.area-buttons a:hover{
+    color: rgb(255, 253, 253);
+}

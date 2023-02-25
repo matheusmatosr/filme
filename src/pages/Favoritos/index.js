@@ -29,7 +29,7 @@ function Favoritos(){
             <h1>Meus filmes favotiros</h1>
             &nbsp;
             
-            {filmes.length === 0 && <h3>Você não tem nenhum filme salvo :( </h3>}
+            {filmes.length === 0 && <h3>Ops, você não tem nenhum filme salvo :( </h3>}
     
             <ul>
                 {filmes.map((item) => {

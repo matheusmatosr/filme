@@ -9,6 +9,9 @@
 
 .not-found h1{
     font-size: 120px;
+    margin-bottom: 40px;
+    margin-top: 60px;
+    color: red;
 }
 
 .not-found a{
@@ -16,5 +19,5 @@
     background-color: #116feb;
     color: #fff;
     padding: 10px;
-    margin-top: 14px;
+    margin-top: 60px;
 }

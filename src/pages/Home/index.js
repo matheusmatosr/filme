@@ -19,7 +19,6 @@ function Home(){
                 }
             })
 
-            // console.log(response.data.results.slice(0, 10));
             setFilmes(response.data.results.slice(0, 10))
             setLoading(false);
         }
@@ -35,15 +34,23 @@ function Home(){
 
     return(
         <div className='container'>
-            <div className='lista-filmes'>
-                {filmes.map((filme) => {
-                    return(
-                        <article key={filme.id} >
-                            <strong>{filme.title}</strong>
-                            <img src={`https://image.tmdb.org/t/p/original/${filme.poster_path}`} alt={filme.title}/>
-                            <Link to={`/filme/${filme.id}`}>Acessar</Link>
-                        </article>
-                    )
+          <div className='lista-filmes'>
+                {filmes.map((filme, index) => {
+                    if (index % 3 === 0) {
+                        // Iniciar uma nova linha
+                        return (
+                            <div className="linha-filmes" key={index}>
+                                {filmes.slice(index, index + 3).map((filme) => (
+                                    <article key={filme.id}>
+                                        <strong>{filme.title}</strong>
+                                        <img src={`https://image.tmdb.org/t/p/original/${filme.poster_path}`} alt={filme.title}/>
+                                        <Link to={`/filme/${filme.id}`}>Acessar</Link>
+                                    </article>
+                                ))}
+                            </div>
+                        );
+                    }
+                    return null; 
                 })}
             </div>
             <div className="detalheFinal">

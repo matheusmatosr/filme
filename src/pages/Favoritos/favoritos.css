@@ -1,51 +1,60 @@
-.meus-filmes{
+.meus-filmes {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center; /* Centraliza o texto */
 }
 
-.meus-filmes h1{
+.meus-filmes h1 {
     margin-bottom: 14px;
+    font-size: 24px;
 }
 
-.meus-filmes span{
+.meus-filmes span {
     font-size: 18px;
+    margin-right: 10px; /* Ajuste no espaçamento entre o nome do filme e os botões */
 }
 
-.meus-filmes ul{
-    width: 720px;
+.meus-filmes ul {
+    width: 80%; /* Reduz um pouco a largura da lista */
+    padding-left: 0;
 }
 
-.meus-filmes ul li{
+.meus-filmes ul li {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 14px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-.meus-filmes div{
+.meus-filmes div {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center; /* Centraliza os botões */
 }
 
-.meus-filmes div a{
+.meus-filmes div a {
     text-decoration: none;
     color: blue;
     margin-right: 14px;
 }
 
-.buttonExcluir{
+.buttonExcluir {
     width: 60px;
     height: 30px;
     background-color: red;
     color: white;
     border: none;
+    border-radius: 4px;
+    font-size: 14px;
 }
 
-.buttonEscolher{
+.buttonEscolher {
     width: 150px;
     height: 38px;
     display: flex;
@@ -55,24 +64,24 @@
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    margin-top: 100px;
+    margin-top: 20px;
     text-decoration: none;
+    font-size: 16px;
 }
 
 @media screen and (max-width: 600px) {
-    .meus-filmes h3{
-        margin-left: 0px;
-        margin-right: 0px;
-        font-size: 18px;
+    .meus-filmes span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
-    .meus-filmes span{
-        margin-left: 175px;
-        margin-right: 17px;
-    }
-    .meus-filmes div a{
+
+    .meus-filmes div a {
         margin-right: 10px;
     }
-    .meus-filmes button{
-        margin-right: 175px;
+
+    .meus-filmes button {
+        width: 40px;
+        font-size: 12px;
     }
 }

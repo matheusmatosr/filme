@@ -1,12 +1,3 @@
-.lista-filmes{
-    max-width: 800px;
-    margin: 14px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
 .loading{
     display: flex;
     justify-content: center;
@@ -23,38 +14,53 @@
     margin-bottom: 30px;
 }
 
-.lista-filmes article{
-    width: 100%;
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 4px;
-}
-
-.lista-filmes strong{
-    margin-bottom: 14px;
-    text-align: center;
-    font-size: 22px;
-    display: block;
-}
-
-.lista-filmes img{
+.lista-filmes {
+    max-width: 800px;
+    margin: 14px auto;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    width: 300px;
-    max-width: 100%;
-    max-height: 340px;
-    object-fit: cover;
-    display: block;
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
-    margin-left: 230px;
+    text-align: center; 
 }
 
-.lista-filmes a{
+.linha-filmes {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.lista-filmes article {
+    width: 30%;
+    background-color: #333333;
+    padding: 15px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.lista-filmes strong {
+    margin-bottom: 14px;
+    font-size: 22px;
+    display: block;
+    color: #fff;
+    background-color: #333333;
+}
+
+.lista-filmes img {
+    width: 100%;
+    max-height: 340px;
+    object-fit: cover;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.lista-filmes a {
     padding: 10px 0;
     font-size: 24px;
     background-color: #116feb;
@@ -62,15 +68,24 @@
     color: #fff;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
-    width: 300px;
-    margin-left: 230px;
+    width: 100%;
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
 }
 
-@media screen and (max-width: 600px) {
-    .lista-filmes img {
-        margin-left: 32px;
+@media screen and (max-width: 768px) {
+    .linha-filmes {
+        flex-direction: column;
+        align-items: center;
     }
-    .lista-filmes a{
-        margin-left: 32px;
+
+    .lista-filmes article {
+        width: 80%; 
+    }
+
+    .lista-filmes img,
+    .lista-filmes a {
+        border-radius: 0; 
     }
 }
